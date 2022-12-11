@@ -20,5 +20,5 @@ jobs:
         uses: docker/setup-buildx-action@v2
       - name: Build the Docker image
         run: |
-          docker buildx . --tag ghcr.io/${{ github.repository }}:latest
+          docker buildx build . --tag ghcr.io/${{ github.repository }}:latest
           docker push ghcr.io/${{ github.repository }}:latest --platform $PLATFORMS
