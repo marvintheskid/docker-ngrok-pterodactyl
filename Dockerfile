@@ -17,4 +17,4 @@ USER container
 ENV USER=container HOME=/home/container
 WORKDIR /home/container
 
-CMD "/entrypoint.sh"
+CMD "./entrypoint.sh"
