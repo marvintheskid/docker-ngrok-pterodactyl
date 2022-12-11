@@ -21,4 +21,4 @@ jobs:
       - name: Build the Docker image
         run: |
           docker buildx . --tag ghcr.io/${{ github.repository }}:latest
-          docker push ghcr.io/${{ github.repository }}:latest --platform ${{PLATFORMS}}
+          docker push ghcr.io/${{ github.repository }}:latest --platform $PLATFORMS
