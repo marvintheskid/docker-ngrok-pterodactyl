@@ -2,6 +2,9 @@ FROM alpine:latest
 
 LABEL author="notmarvin"
 
+ARG TARGETOS
+ARG TARGETARCH
+
 # Install curl
 RUN apk add --no-cache curl
 
